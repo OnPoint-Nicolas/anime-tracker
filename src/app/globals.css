@@ -81,7 +81,18 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
+.loginButton {
+  display: block;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #ffa043;
+  color: #17110b;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
 .loginCard button:hover {
   background: #ffb15f;
 }
