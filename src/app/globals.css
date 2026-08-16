@@ -92,3 +92,169 @@ body {
   color: #9b9baa;
   text-align: center;
 }
+.dashboardPage {
+  min-height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 18px max(24px, calc((100% - 1100px) / 2));
+  border-bottom: 1px solid #39334c;
+  background: #11121cdd;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ffa043;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a,
+.sectionHeading a {
+  color: #b6b6c5;
+  text-decoration: none;
+}
+
+.navLinks .activeLink,
+.sectionHeading a {
+  color: #ffa043;
+}
+
+.guest {
+  margin-left: auto;
+  color: #b6b6c5;
+}
+
+.dashboardContent {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.dashboardContent h1,
+.dashboardContent h2,
+.dashboardContent h3 {
+  margin-top: 0;
+}
+
+.subtitle {
+  max-width: 650px;
+  color: #b6b6c5;
+  line-height: 1.5;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 32px 0 48px;
+}
+
+.statCard,
+.dashboardSection,
+.animePreview {
+  border: 1px solid #39334c;
+  border-radius: 16px;
+  background: #191a26;
+}
+
+.statCard {
+  padding: 22px;
+}
+
+.statCard strong {
+  display: block;
+  color: #ffa043;
+  font-size: 32px;
+}
+
+.statCard span {
+  color: #b6b6c5;
+  font-size: 14px;
+}
+
+.dashboardSection {
+  padding: 28px;
+  margin-top: 24px;
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sectionHeading h2 {
+  margin-bottom: 0;
+}
+
+.sectionHeading span {
+  color: #9b9baa;
+  font-size: 14px;
+}
+
+.emptyState {
+  padding: 36px;
+  border-radius: 12px;
+  background: #20212e;
+  text-align: center;
+}
+
+.emptyState p,
+.animePreview p {
+  color: #b6b6c5;
+}
+
+.primaryButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #ffa043;
+  color: #17110b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.animePreviewGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.animePreview {
+  padding: 20px;
+}
+
+.animePreview span {
+  color: #ffa043;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .navigation,
+  .navLinks,
+  .sectionHeading {
+    flex-wrap: wrap;
+  }
+
+  .statsGrid,
+  .animePreviewGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -19,7 +19,9 @@ export default function Home() {
             placeholder="Mindestens 6 Zeichen"
           />
 
-          <button type="button">Anmelden</button>
+          <Link className="loginButton" href="/dashboard">
+            Anmelden
+          </Link>
         </form>
 
         <small>Demo-Anmeldung – noch ohne echte Benutzerkonten.</small>
